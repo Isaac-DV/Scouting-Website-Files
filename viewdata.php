@@ -3,7 +3,7 @@
 <head>
 <meta  http-equiv="Content-Type" content="text/html;  charset=iso-8859-1">
 <link type="text/css" rel="stylesheet" href="datastyle.css"/>
-<title>Search Teams</title>
+<title>View Data</title>
 </head>
 <body>
 <div id="bar">

@@ -37,46 +37,46 @@ $page1 = "<table>
 			<tr>
 				<td>Team Number</td>
 				<td>MATCHES PLAYED</td>
-				<td>ACTIVEAUTO AVG</td>
-				<td>SPYBOT START AVG</td>
-				<td>DEFENSE BREACH AVG</td>
-				<td>AUTO LOWBAR</td>
-				<td>AUTO CULLIS</td>
-				<td>AUTO CDF</td>
-				<td>AUTO MOAT</td>
-				<td>AUTO RAMP</td>
-				<td>AUTO BRIDGE</td>
-				<td>AUTO SALLY</td>
-				<td>AUTO ROCKWALL</td>
-				<td>AUTO ROUGH</td>
-				<td>AUTO HIGH GOAL</td>
-				<td>AUTO LOW GOAL</td>
-				<td>SHOTS FIRED AVG</td>
-				<td>HIGH SCORED AVG</td>
+				<td class='activeauto'>ACTIVEAUTO AVG</td>
+				<td class='spybotstart'>SPYBOT START AVG</td>
+				<td class='defensebreach'>DEFENSE BREACH AVG</td>
+				<td class='autolowbar'>AUTO LOWBAR</td>
+				<td class='autocullis'>AUTO CULLIS</td>
+				<td class='autocdf'>AUTO CDF</td>
+				<td class='automoat'>AUTO MOAT</td>
+				<td class='autoramp'>AUTO RAMP</td>
+				<td class='autobridge'>AUTO BRIDGE</td>
+				<td class='autosally'>AUTO SALLY</td>
+				<td class='autorockwall'>AUTO ROCKWALL</td>
+				<td class='autorough'>AUTO ROUGH</td>
+				<td class='autohighgoal'>AUTO HIGH GOAL</td>
+				<td class='autolowgoal'>AUTO LOW GOAL</td>
+				<td class='shotsfired'>SHOTS FIRED AVG</td>
+				<td class='highscored'>HIGH SCORED AVG</td>
 		        <td>HIGH ACCURACY</td>  
-				<td>LOW SCORED AVG</td>
-				<td>LOW BAR CROSSED</td>
-				<td>LOW HARD CROSS</td>
-				<td>PORTCULL CROSS</td>
-				<td>PORT HARD CROSS</td>
-				<td>CDF CROSSED</td>
-				<td>CDF HARD CROSS</td>
-				<td>MOAT CROSS</td>
-				<td>MOAT HARD CROSS</td>
-				<td>RAMP CROSS</td>
-				<td>RAMP HARD CROSS</td>
-				<td>DRAW CROSS</td>
-				<td>DRAW HARD CROSS</td>
-				<td>SALLY CROSS</td>
-				<td>SALLY HARD CROSS</td>
-				<td>ROCK WALL CROSS</td>
-				<td>ROCK HARD CROSS</td>
-				<td>ROUGH CROSS</td>
-				<td>ROUGH HARD CROSS</td>
-				<td>ROBOT CHALLENGE</td>
-				<td>ROBOT CLIMB</td>
-				<td>CLIMB SPEED</td>
-				<td>CLIMB SUCCESS</td>
+				<td class='lowscored'>LOW SCORED AVG</td>
+				<td class='lowbarcrossed'>LOW BAR CROSSED</td>
+				<td class='lowhardcrossed'>LOW HARD CROSS</td>
+				<td class='portcullcross'>PORTCULL CROSS</td>
+				<td class='porthardcross'>PORT HARD CROSS</td>
+				<td class='cdfcrossed'>CDF CROSSED</td>
+				<td class='cdfhardcross'>CDF HARD CROSS</td>
+				<td class='moatcross'>MOAT CROSS</td>
+				<td class='moathardcross'>MOAT HARD CROSS</td>
+				<td class='rampcross'>RAMP CROSS</td>
+				<td class='ramphardcross'>RAMP HARD CROSS</td>
+				<td class='drawcross'>DRAW CROSS</td>
+				<td class='drawhardcross'>DRAW HARD CROSS</td>
+				<td class='sallycross'>SALLY CROSS</td>
+				<td class='sallyhardcross'>SALLY HARD CROSS</td>
+				<td class='rockwallcross'>ROCK WALL CROSS</td>
+				<td class='rockhardcross'>ROCK HARD CROSS</td>
+				<td class='roughcross'>ROUGH CROSS</td>
+				<td class='roughhardcross'>ROUGH HARD CROSS</td>
+				<td class='robotchallenge'>ROBOT CHALLENGE</td>
+				<td class='robotclimb'>ROBOT CLIMB</td>
+				<td class='climbspeed'>CLIMB SPEED</td>
+				<td class='climbsuccess'>CLIMB SUCCESS</td>
 			</tr>";
 
 $searchq = $_POST['search'];
@@ -105,46 +105,46 @@ while($match = mysql_fetch_array($query)){
 		$page1 .= '<tr>
 				<td>'.$match['teamNumber'].'</td>
 				<td>'.$matchint.'</td>
-				<td>'.$averagesearch[0].'</td>
-				<td>'.$averagesearch[1].'</td>
-				<td>'.$averagesearch[2].'</td>
-				<td>'.$averagesearch[3].'</td>
-				<td>'.$averagesearch[4].'</td>
-				<td>'.$averagesearch[5].'</td>
-				<td>'.$averagesearch[6].'</td>
-				<td>'.$averagesearch[7].'</td>
-				<td>'.$averagesearch[8].'</td>
-				<td>'.$averagesearch[9].'</td>
-				<td>'.$averagesearch[10].'</td>
-				<td>'.$averagesearch[11].'</td>
-				<td>'.$averagesearch[12].'</td>
-				<td>'.$averagesearch[13].'</td>
-				<td>'.$averagesearch[14].'</td>
-				<td>'.$averagesearch[15].'</td>
+				<td class="activeauto">'.$averagesearch[0].'</td>
+				<td class="spybotstart">'.$averagesearch[1].'</td>
+				<td class="defensebreach">'.$averagesearch[2].'</td>
+				<td class="autolowbar">'.$averagesearch[3].'</td>
+				<td class="autocullis">'.$averagesearch[4].'</td>
+				<td class="autocdf">'.$averagesearch[5].'</td>
+				<td class="automoat">'.$averagesearch[6].'</td>
+				<td class="autoramp">'.$averagesearch[7].'</td>
+				<td class="autobridge">'.$averagesearch[8].'</td>
+				<td class="autosally">'.$averagesearch[9].'</td>
+				<td class="autorockwall">'.$averagesearch[10].'</td>
+				<td class="autorough">'.$averagesearch[11].'</td>
+				<td class="autohighgoal">'.$averagesearch[12].'</td>
+				<td class="autolowgoal">'.$averagesearch[13].'</td>
+				<td class="shotsfired">'.$averagesearch[14].'</td>
+				<td class="highscored">'.$averagesearch[15].'</td>
 				<td>'.$accuracy1.'%</td>
-				<td>'.$averagesearch[16].'</td>
-				<td>'.$averagesearch[17].'</td>
-				<td>'.$averagesearch[18].'</td>
-				<td>'.$averagesearch[19].'</td>
-				<td>'.$averagesearch[20].'</td>
-				<td>'.$averagesearch[21].'</td>
-				<td>'.$averagesearch[22].'</td>
-				<td>'.$averagesearch[23].'</td>
-				<td>'.$averagesearch[24].'</td>
-				<td>'.$averagesearch[25].'</td>
-				<td>'.$averagesearch[26].'</td>
-				<td>'.$averagesearch[27].'</td>
-				<td>'.$averagesearch[28].'</td>
-				<td>'.$averagesearch[29].'</td>
-				<td>'.$averagesearch[30].'</td>
-				<td>'.$averagesearch[31].'</td>
-				<td>'.$averagesearch[32].'</td>
-				<td>'.$averagesearch[33].'</td>
-				<td>'.$averagesearch[34].'</td>
-				<td>'.$averagesearch[35].'</td>
-				<td>'.$averagesearch[36].'</td>
-				<td>'.$averagesearch[37].' sec</td>
-				<td>'.$percent1.'%</td>
+				<td class="lowscored">'.$averagesearch[16].'</td>
+				<td class="lowbarcrossed">'.$averagesearch[17].'</td>
+				<td class="lowhardcrossed">'.$averagesearch[18].'</td>
+				<td class="portcullcross">'.$averagesearch[19].'</td>
+				<td class="porthardcross">'.$averagesearch[20].'</td>
+				<td class="cdfcrossed">'.$averagesearch[21].'</td>
+				<td class="cdfhardcross">'.$averagesearch[22].'</td>
+				<td class="moatcross">'.$averagesearch[23].'</td>
+				<td class="moathardcross">'.$averagesearch[24].'</td>
+				<td class="rampcross">'.$averagesearch[25].'</td>
+				<td class="ramphardcross">'.$averagesearch[26].'</td>
+				<td class="drawcross">'.$averagesearch[27].'</td>
+				<td class="drawhardcross">'.$averagesearch[28].'</td>
+				<td class="sallycross">'.$averagesearch[29].'</td>
+				<td class="sallyhardcross">'.$averagesearch[30].'</td>
+				<td class="rockwallcross">'.$averagesearch[31].'</td>
+				<td class="rockhardcross">'.$averagesearch[32].'</td>
+				<td class="roughcross">'.$averagesearch[33].'</td>
+				<td class="roughhardcross">'.$averagesearch[34].'</td>
+				<td class="robotchallenge">'.$averagesearch[35].'</td>
+				<td class="robotclimb">'.$averagesearch[36].'</td>
+				<td class="climbspeed">'.$averagesearch[37].' sec</td>
+				<td class="climbsuccess">'.$percent1.'%</td>
 			  </tr>';
 }
 	}
@@ -170,46 +170,46 @@ while($match = mysql_fetch_array($query)){
 				$page1 .= '<tr>
 				<td>'.$match['teamNumber'].'</td>
 				<td>'.$matchint.'</td>
-				<td>'.$averagesearch[0].'</td>
-				<td>'.$averagesearch[1].'</td>
-				<td>'.$averagesearch[2].'</td>
-				<td>'.$averagesearch[3].'</td>
-				<td>'.$averagesearch[4].'</td>
-				<td>'.$averagesearch[5].'</td>
-				<td>'.$averagesearch[6].'</td>
-				<td>'.$averagesearch[7].'</td>
-				<td>'.$averagesearch[8].'</td>
-				<td>'.$averagesearch[9].'</td>
-				<td>'.$averagesearch[10].'</td>
-				<td>'.$averagesearch[11].'</td>
-				<td>'.$averagesearch[12].'</td>
-				<td>'.$averagesearch[13].'</td>
-				<td>'.$averagesearch[14].'</td>
-				<td>'.$averagesearch[15].'</td>
+				<td class="activeauto">'.$averagesearch[0].'</td>
+				<td class="spybotstart">'.$averagesearch[1].'</td>
+				<td class="defensebreach">'.$averagesearch[2].'</td>
+				<td class="autolowbar">'.$averagesearch[3].'</td>
+				<td class="autocullis">'.$averagesearch[4].'</td>
+				<td class="autocdf">'.$averagesearch[5].'</td>
+				<td class="automoat">'.$averagesearch[6].'</td>
+				<td class="autoramp">'.$averagesearch[7].'</td>
+				<td class="autobridge">'.$averagesearch[8].'</td>
+				<td class="autosally">'.$averagesearch[9].'</td>
+				<td class="autorockwall">'.$averagesearch[10].'</td>
+				<td class="autorough">'.$averagesearch[11].'</td>
+				<td class="autohighgoal">'.$averagesearch[12].'</td>
+				<td class="autolowgoal">'.$averagesearch[13].'</td>
+				<td class="shotsfired">'.$averagesearch[14].'</td>
+				<td class="highscored">'.$averagesearch[15].'</td>
 				<td>'.$accuracy1.'%</td>
-				<td>'.$averagesearch[16].'</td>
-				<td>'.$averagesearch[17].'</td>
-				<td>'.$averagesearch[18].'</td>
-				<td>'.$averagesearch[19].'</td>
-				<td>'.$averagesearch[20].'</td>
-				<td>'.$averagesearch[21].'</td>
-				<td>'.$averagesearch[22].'</td>
-				<td>'.$averagesearch[23].'</td>
-				<td>'.$averagesearch[24].'</td>
-				<td>'.$averagesearch[25].'</td>
-				<td>'.$averagesearch[26].'</td>
-				<td>'.$averagesearch[27].'</td>
-				<td>'.$averagesearch[28].'</td>
-				<td>'.$averagesearch[29].'</td>
-				<td>'.$averagesearch[30].'</td>
-				<td>'.$averagesearch[31].'</td>
-				<td>'.$averagesearch[32].'</td>
-				<td>'.$averagesearch[33].'</td>
-				<td>'.$averagesearch[34].'</td>
-				<td>'.$averagesearch[35].'</td>
-				<td>'.$averagesearch[36].'</td>
-				<td>'.$averagesearch[37].' sec</td>
-				<td>'.$percent1.'%</td>
+				<td class="lowscored">'.$averagesearch[16].'</td>
+				<td class="lowbarcrossed">'.$averagesearch[17].'</td>
+				<td class="lowhardcrossed">'.$averagesearch[18].'</td>
+				<td class="portcullcross">'.$averagesearch[19].'</td>
+				<td class="porthardcross">'.$averagesearch[20].'</td>
+				<td class="cdfcrossed">'.$averagesearch[21].'</td>
+				<td class="cdfhardcross">'.$averagesearch[22].'</td>
+				<td class="moatcross">'.$averagesearch[23].'</td>
+				<td class="moathardcross">'.$averagesearch[24].'</td>
+				<td class="rampcross">'.$averagesearch[25].'</td>
+				<td class="ramphardcross">'.$averagesearch[26].'</td>
+				<td class="drawcross">'.$averagesearch[27].'</td>
+				<td class="drawhardcross">'.$averagesearch[28].'</td>
+				<td class="sallycross">'.$averagesearch[29].'</td>
+				<td class="sallyhardcross">'.$averagesearch[30].'</td>
+				<td class="rockwallcross">'.$averagesearch[31].'</td>
+				<td class="rockhardcross">'.$averagesearch[32].'</td>
+				<td class="roughcross">'.$averagesearch[33].'</td>
+				<td class="roughhardcross">'.$averagesearch[34].'</td>
+				<td class="robotchallenge">'.$averagesearch[35].'</td>
+				<td class="robotclimb">'.$averagesearch[36].'</td>
+				<td class="climbspeed">'.$averagesearch[37].' sec</td>
+				<td class="climbsuccess">'.$percent1.'%</td>
 			  </tr>';
 		}
 	}
@@ -235,46 +235,46 @@ while($match = mysql_fetch_array($query)){
 		$page1 .= '<tr>
 				<td>'.$match['teamNumber'].'</td>
 				<td>'.$matchint.'</td>
-				<td>'.$averagesearch[0].'</td>
-				<td>'.$averagesearch[1].'</td>
-				<td>'.$averagesearch[2].'</td>
-				<td>'.$averagesearch[3].'</td>
-				<td>'.$averagesearch[4].'</td>
-				<td>'.$averagesearch[5].'</td>
-				<td>'.$averagesearch[6].'</td>
-				<td>'.$averagesearch[7].'</td>
-				<td>'.$averagesearch[8].'</td>
-				<td>'.$averagesearch[9].'</td>
-				<td>'.$averagesearch[10].'</td>
-				<td>'.$averagesearch[11].'</td>
-				<td>'.$averagesearch[12].'</td>
-				<td>'.$averagesearch[13].'</td>
-				<td>'.$averagesearch[14].'</td>
-				<td>'.$averagesearch[15].'</td>
+				<td class="activeauto">'.$averagesearch[0].'</td>
+				<td class="spybotstart">'.$averagesearch[1].'</td>
+				<td class="defensebreach">'.$averagesearch[2].'</td>
+				<td class="autolowbar">'.$averagesearch[3].'</td>
+				<td class="autocullis">'.$averagesearch[4].'</td>
+				<td class="autocdf">'.$averagesearch[5].'</td>
+				<td class="automoat">'.$averagesearch[6].'</td>
+				<td class="autoramp">'.$averagesearch[7].'</td>
+				<td class="autobridge">'.$averagesearch[8].'</td>
+				<td class="autosally">'.$averagesearch[9].'</td>
+				<td class="autorockwall">'.$averagesearch[10].'</td>
+				<td class="autorough">'.$averagesearch[11].'</td>
+				<td class="autohighgoal">'.$averagesearch[12].'</td>
+				<td class="autolowgoal">'.$averagesearch[13].'</td>
+				<td class="shotsfired">'.$averagesearch[14].'</td>
+				<td class="highscored">'.$averagesearch[15].'</td>
 				<td>'.$accuracy1.'%</td>
-				<td>'.$averagesearch[16].'</td>
-				<td>'.$averagesearch[17].'</td>
-				<td>'.$averagesearch[18].'</td>
-				<td>'.$averagesearch[19].'</td>
-				<td>'.$averagesearch[20].'</td>
-				<td>'.$averagesearch[21].'</td>
-				<td>'.$averagesearch[22].'</td>
-				<td>'.$averagesearch[23].'</td>
-				<td>'.$averagesearch[24].'</td>
-				<td>'.$averagesearch[25].'</td>
-				<td>'.$averagesearch[26].'</td>
-				<td>'.$averagesearch[27].'</td>
-				<td>'.$averagesearch[28].'</td>
-				<td>'.$averagesearch[29].'</td>
-				<td>'.$averagesearch[30].'</td>
-				<td>'.$averagesearch[31].'</td>
-				<td>'.$averagesearch[32].'</td>
-				<td>'.$averagesearch[33].'</td>
-				<td>'.$averagesearch[34].'</td>
-				<td>'.$averagesearch[35].'</td>
-				<td>'.$averagesearch[36].'</td>
-				<td>'.$averagesearch[37].' sec</td>
-				<td>'.$percent1.'%</td>
+				<td class="lowscored">'.$averagesearch[16].'</td>
+				<td class="lowbarcrossed">'.$averagesearch[17].'</td>
+				<td class="lowhardcrossed">'.$averagesearch[18].'</td>
+				<td class="portcullcross">'.$averagesearch[19].'</td>
+				<td class="porthardcross">'.$averagesearch[20].'</td>
+				<td class="cdfcrossed">'.$averagesearch[21].'</td>
+				<td class="cdfhardcross">'.$averagesearch[22].'</td>
+				<td class="moatcross">'.$averagesearch[23].'</td>
+				<td class="moathardcross">'.$averagesearch[24].'</td>
+				<td class="rampcross">'.$averagesearch[25].'</td>
+				<td class="ramphardcross">'.$averagesearch[26].'</td>
+				<td class="drawcross">'.$averagesearch[27].'</td>
+				<td class="drawhardcross">'.$averagesearch[28].'</td>
+				<td class="sallycross">'.$averagesearch[29].'</td>
+				<td class="sallyhardcross">'.$averagesearch[30].'</td>
+				<td class="rockwallcross">'.$averagesearch[31].'</td>
+				<td class="rockhardcross">'.$averagesearch[32].'</td>
+				<td class="roughcross">'.$averagesearch[33].'</td>
+				<td class="roughhardcross">'.$averagesearch[34].'</td>
+				<td class="robotchallenge">'.$averagesearch[35].'</td>
+				<td class="robotclimb">'.$averagesearch[36].'</td>
+				<td class="climbspeed">'.$averagesearch[37].' sec</td>
+				<td class="climbsuccess">'.$percent1.'%</td>
 			  </tr>';
 }
 }
@@ -301,46 +301,46 @@ if($averagesearch[14] != 0){
 	$page1 .= '<tr>
 				<td>'.$match['teamNumber'].'</td>
 				<td>'.$matchint.'</td>
-				<td>'.$averagesearch[0].'</td>
-				<td>'.$averagesearch[1].'</td>
-				<td>'.$averagesearch[2].'</td>
-				<td>'.$averagesearch[3].'</td>
-				<td>'.$averagesearch[4].'</td>
-				<td>'.$averagesearch[5].'</td>
-				<td>'.$averagesearch[6].'</td>
-				<td>'.$averagesearch[7].'</td>
-				<td>'.$averagesearch[8].'</td>
-				<td>'.$averagesearch[9].'</td>
-				<td>'.$averagesearch[10].'</td>
-				<td>'.$averagesearch[11].'</td>
-				<td>'.$averagesearch[12].'</td>
-				<td>'.$averagesearch[13].'</td>
-				<td>'.$averagesearch[14].'</td>
-				<td>'.$averagesearch[15].'</td>
+				<td class="activeauto">'.$averagesearch[0].'</td>
+				<td class="spybotstart">'.$averagesearch[1].'</td>
+				<td class="defensebreach">'.$averagesearch[2].'</td>
+				<td class="autolowbar">'.$averagesearch[3].'</td>
+				<td class="autocullis">'.$averagesearch[4].'</td>
+				<td class="autocdf">'.$averagesearch[5].'</td>
+				<td class="automoat">'.$averagesearch[6].'</td>
+				<td class="autoramp">'.$averagesearch[7].'</td>
+				<td class="autobridge">'.$averagesearch[8].'</td>
+				<td class="autosally">'.$averagesearch[9].'</td>
+				<td class="autorockwall">'.$averagesearch[10].'</td>
+				<td class="autorough">'.$averagesearch[11].'</td>
+				<td class="autohighgoal">'.$averagesearch[12].'</td>
+				<td class="autolowgoal">'.$averagesearch[13].'</td>
+				<td class="shotsfired">'.$averagesearch[14].'</td>
+				<td class="highscored">'.$averagesearch[15].'</td>
 				<td>'.$accuracy1.'%</td>
-				<td>'.$averagesearch[16].'</td>
-				<td>'.$averagesearch[17].'</td>
-				<td>'.$averagesearch[18].'</td>
-				<td>'.$averagesearch[19].'</td>
-				<td>'.$averagesearch[20].'</td>
-				<td>'.$averagesearch[21].'</td>
-				<td>'.$averagesearch[22].'</td>
-				<td>'.$averagesearch[23].'</td>
-				<td>'.$averagesearch[24].'</td>
-				<td>'.$averagesearch[25].'</td>
-				<td>'.$averagesearch[26].'</td>
-				<td>'.$averagesearch[27].'</td>
-				<td>'.$averagesearch[28].'</td>
-				<td>'.$averagesearch[29].'</td>
-				<td>'.$averagesearch[30].'</td>
-				<td>'.$averagesearch[31].'</td>
-				<td>'.$averagesearch[32].'</td>
-				<td>'.$averagesearch[33].'</td>
-				<td>'.$averagesearch[34].'</td>
-				<td>'.$averagesearch[35].'</td>
-				<td>'.$averagesearch[36].'</td>
-				<td>'.$averagesearch[37].' sec</td>
-				<td>'.$percent1.'%</td>
+				<td class="lowscored">'.$averagesearch[16].'</td>
+				<td class="lowbarcrossed">'.$averagesearch[17].'</td>
+				<td class="lowhardcrossed">'.$averagesearch[18].'</td>
+				<td class="portcullcross">'.$averagesearch[19].'</td>
+				<td class="porthardcross">'.$averagesearch[20].'</td>
+				<td class="cdfcrossed">'.$averagesearch[21].'</td>
+				<td class="cdfhardcross">'.$averagesearch[22].'</td>
+				<td class="moatcross">'.$averagesearch[23].'</td>
+				<td class="moathardcross">'.$averagesearch[24].'</td>
+				<td class="rampcross">'.$averagesearch[25].'</td>
+				<td class="ramphardcross">'.$averagesearch[26].'</td>
+				<td class="drawcross">'.$averagesearch[27].'</td>
+				<td class="drawhardcross">'.$averagesearch[28].'</td>
+				<td class="sallycross">'.$averagesearch[29].'</td>
+				<td class="sallyhardcross">'.$averagesearch[30].'</td>
+				<td class="rockwallcross">'.$averagesearch[31].'</td>
+				<td class="rockhardcross">'.$averagesearch[32].'</td>
+				<td class="roughcross">'.$averagesearch[33].'</td>
+				<td class="roughhardcross">'.$averagesearch[34].'</td>
+				<td class="robotchallenge">'.$averagesearch[35].'</td>
+				<td class="robotclimb">'.$averagesearch[36].'</td>
+				<td class="climbspeed">'.$averagesearch[37].' sec</td>
+				<td class="climbsuccess">'.$percent1.'%</td>
 			  </tr>';
 	
 	  }
@@ -354,46 +354,46 @@ if($averagesearch[14] != 0){
 			<tr>
 				<td>Team Number</td>
 				<td>MATCHES PLAYED</td>
-				<td>ACTIVEAUTO AVG</td>
-				<td>SPYBOT START AVG</td>
-				<td>DEFENSE BREACH AVG</td>
-				<td>AUTO LOWBAR</td>
-				<td>AUTO CULLIS</td>
-				<td>AUTO CDF</td>
-				<td>AUTO MOAT</td>
-				<td>AUTO RAMP</td>
-				<td>AUTO BRIDGE</td>
-				<td>AUTO SALLY</td>
-				<td>AUTO ROCKWALL</td>
-				<td>AUTO ROUGH</td>
-				<td>AUTO HIGH GOAL</td>
-				<td>AUTO LOW GOAL</td>
-				<td>SHOTS FIRED AVG</td>
-				<td>HIGH SCORED AVG</td>
-		        <td>HIGH ACCURACY</td>
-				<td>LOW SCORED AVG</td>
-				<td>LOW BAR CROSSED</td>
-				<td>LOW HARD CROSS</td>
-				<td>PORTCULL CROSS</td>
-				<td>PORT HARD CROSS</td>
-				<td>CDF CROSSED</td>
-				<td>CDF HARD CROSS</td>
-				<td>MOAT CROSS</td>
-				<td>MOAT HARD CROSS</td>
-				<td>RAMP CROSS</td>
-				<td>RAMP HARD CROSS</td>
-				<td>DRAW CROSS</td>
-				<td>DRAW HARD CROSS</td>
-				<td>SALLY CROSS</td>
-				<td>SALLY HARD CROSS</td>
-				<td>ROCK WALL CROSS</td>
-				<td>ROCK HARD CROSS</td>
-				<td>ROUGH CROSS</td>
-				<td>ROUGH HARD CROSS</td>
-				<td>ROBOT CHALLENGE</td>
-				<td>ROBOT CLIMB</td>
-				<td>CLIMB SPEED</td>
-				<td>CLIMB SUCCESS</td>
+				<td class='activeauto'>ACTIVEAUTO AVG</td>
+				<td class='spybotstart'>SPYBOT START AVG</td>
+				<td class='defensebreach'>DEFENSE BREACH AVG</td>
+				<td class='autolowbar'>AUTO LOWBAR</td>
+				<td class='autocullis'>AUTO CULLIS</td>
+				<td class='autocdf'>AUTO CDF</td>
+				<td class='automoat'>AUTO MOAT</td>
+				<td class='autoramp'>AUTO RAMP</td>
+				<td class='autobridge'>AUTO BRIDGE</td>
+				<td class='autosally'>AUTO SALLY</td>
+				<td class='autorockwall'>AUTO ROCKWALL</td>
+				<td class='autorough'>AUTO ROUGH</td>
+				<td class='autohighgoal'>AUTO HIGH GOAL</td>
+				<td class='autolowgoal'>AUTO LOW GOAL</td>
+				<td class='shotsfired'>SHOTS FIRED AVG</td>
+				<td class='highscored'>HIGH SCORED AVG</td>
+		        <td>HIGH ACCURACY</td>  
+				<td class='lowscored'>LOW SCORED AVG</td>
+				<td class='lowbarcrossed'>LOW BAR CROSSED</td>
+				<td class='lowhardcrossed'>LOW HARD CROSS</td>
+				<td class='portcullcross'>PORTCULL CROSS</td>
+				<td class='porthardcross'>PORT HARD CROSS</td>
+				<td class='cdfcrossed'>CDF CROSSED</td>
+				<td class='cdfhardcross'>CDF HARD CROSS</td>
+				<td class='moatcross'>MOAT CROSS</td>
+				<td class='moathardcross'>MOAT HARD CROSS</td>
+				<td class='rampcross'>RAMP CROSS</td>
+				<td class='ramphardcross'>RAMP HARD CROSS</td>
+				<td class='drawcross'>DRAW CROSS</td>
+				<td class='drawhardcross'>DRAW HARD CROSS</td>
+				<td class='sallycross'>SALLY CROSS</td>
+				<td class='sallyhardcross'>SALLY HARD CROSS</td>
+				<td class='rockwallcross'>ROCK WALL CROSS</td>
+				<td class='rockhardcross'>ROCK HARD CROSS</td>
+				<td class='roughcross'>ROUGH CROSS</td>
+				<td class='roughhardcross'>ROUGH HARD CROSS</td>
+				<td class='robotchallenge'>ROBOT CHALLENGE</td>
+				<td class='robotclimb'>ROBOT CLIMB</td>
+				<td class='climbspeed'>CLIMB SPEED</td>
+				<td class='climbsuccess'>CLIMB SUCCESS</td>
 			</tr>";
 	  $average = mysql_query('select distinct teamNumber from ChampData order by teamNumber asc');
 	  while ($data = mysql_fetch_array($average)){
@@ -412,46 +412,46 @@ if($averagesearch[14] != 0){
 	  		$page .= '<tr>
 				<td>'.$data['teamNumber'].'</td>
 				<td>'.$matchint.'</td>
-				<td>'.$teamaverage[0].'</td>
-				<td>'.$teamaverage[1].'</td>
-				<td>'.$teamaverage[2].'</td>
-				<td>'.$teamaverage[3].'</td>
-				<td>'.$teamaverage[4].'</td>
-				<td>'.$teamaverage[5].'</td>
-				<td>'.$teamaverage[6].'</td>
-				<td>'.$teamaverage[7].'</td>
-				<td>'.$teamaverage[8].'</td>
-				<td>'.$teamaverage[9].'</td>
-				<td>'.$teamaverage[10].'</td>
-				<td>'.$teamaverage[11].'</td>
-				<td>'.$teamaverage[12].'</td>
-				<td>'.$teamaverage[13].'</td>
-				<td>'.$teamaverage[14].'</td>
-				<td>'.$teamaverage[15].'</td>
+				<td class="activeauto">'.$teamaverage[0].'</td>
+				<td class="spybotstart">'.$teamaverage[1].'</td>
+				<td class="defensebreach">'.$teamaverage[2].'</td>
+				<td class="autolowbar">'.$teamaverage[3].'</td>
+				<td class="autocullis">'.$teamaverage[4].'</td>
+				<td class="autocdf">'.$teamaverage[5].'</td>
+				<td class="automoat">'.$teamaverage[6].'</td>
+				<td class="autoramp">'.$teamaverage[7].'</td>
+				<td class="autobridge">'.$teamaverage[8].'</td>
+				<td class="autosally">'.$teamaverage[9].'</td>
+				<td class="autorockwall">'.$teamaverage[10].'</td>
+				<td class="autorough">'.$teamaverage[11].'</td>
+				<td class="autohighgoal">'.$teamaverage[12].'</td>
+				<td class="autolowgoal">'.$teamaverage[13].'</td>
+				<td class="shotsfired">'.$teamaverage[14].'</td>
+				<td class="highscored">'.$teamaverage[15].'</td>
 				<td>'.$accuracy.'%</td>
-				<td>'.$teamaverage[16].'</td>
-				<td>'.$teamaverage[17].'</td>
-				<td>'.$teamaverage[18].'</td>
-				<td>'.$teamaverage[19].'</td>
-				<td>'.$teamaverage[20].'</td>
-				<td>'.$teamaverage[21].'</td>
-				<td>'.$teamaverage[22].'</td>
-				<td>'.$teamaverage[23].'</td>
-				<td>'.$teamaverage[24].'</td>
-				<td>'.$teamaverage[25].'</td>
-				<td>'.$teamaverage[26].'</td>
-				<td>'.$teamaverage[27].'</td>
-				<td>'.$teamaverage[28].'</td>
-				<td>'.$teamaverage[29].'</td>
-				<td>'.$teamaverage[30].'</td>
-				<td>'.$teamaverage[31].'</td>
-				<td>'.$teamaverage[32].'</td>
-				<td>'.$teamaverage[33].'</td>
-				<td>'.$teamaverage[34].'</td>
-				<td>'.$teamaverage[35].'</td>
-				<td>'.$teamaverage[36].'</td>
-				<td>'.$teamaverage[37].' sec</td>
-				<td>'.$percent.'%</td>
+				<td class="lowscored">'.$teamaverage[16].'</td>
+				<td class="lowbarcrossed">'.$teamaverage[17].'</td>
+				<td class="lowhardcrossed">'.$teamaverage[18].'</td>
+				<td class="portcullcross">'.$teamaverage[19].'</td>
+				<td class="porthardcross">'.$teamaverage[20].'</td>
+				<td class="cdfcrossed">'.$teamaverage[21].'</td>
+				<td class="cdfhardcross">'.$teamaverage[22].'</td>
+				<td class="moatcross">'.$teamaverage[23].'</td>
+				<td class="moathardcross">'.$teamaverage[24].'</td>
+				<td class="rampcross">'.$teamaverage[25].'</td>
+				<td class="ramphardcross">'.$teamaverage[26].'</td>
+				<td class="drawcross">'.$teamaverage[27].'</td>
+				<td class="drawhardcross">'.$teamaverage[28].'</td>
+				<td class="sallycross">'.$teamaverage[29].'</td>
+				<td class="sallyhardcross">'.$teamaverage[30].'</td>
+				<td class="rockwallcross">'.$teamaverage[31].'</td>
+				<td class="rockhardcross">'.$teamaverage[32].'</td>
+				<td class="roughcross">'.$teamaverage[33].'</td>
+				<td class="roughhardcross">'.$teamaverage[34].'</td>
+				<td class="robotchallenge">'.$teamaverage[35].'</td>
+				<td class="robotclimb">'.$teamaverage[36].'</td>
+				<td class="climbspeed">'.$teamaverage[37].' sec</td>
+				<td class="climbsuccess">'.$percent.'%</td>
 			  </tr>';
 	  }
 	  

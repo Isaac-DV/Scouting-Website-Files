@@ -33,12 +33,12 @@ mysql_select_db($database_name);
 
 if(isset($_POST['submit'])){
 	$searchq = $_POST['search'];
+	$lower = strtolower($searchq);
+	if($lower !== "delete from champdata"){
 		$query = mysql_query($searchq);
 		if(mysql_error()){
-			die(mysql_error());
-		echo "Success";
-	
-	
+			die(mysql_error());}
+		print("Success");
 	}
 	
 }
