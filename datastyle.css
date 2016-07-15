@@ -1,0 +1,160 @@
+td{
+  border:2px solid #DFF4DD;
+}
+.activeauto{
+  background-color:#B8833D;
+}
+.spybotstart{
+  background-color:#B4943C;
+}
+.defensebreach{
+  background-color:#C1A344;
+}
+.autolowbar{
+  background-color:#C3B34B;
+}
+.autocullis{
+  background-color:#C4C04F;
+}
+.autocdf{
+  background-color:#C1C757;
+}
+.automoat{
+  background-color:#C5CF6E;
+}
+.autoramp{
+  background-color:#C2C047;
+}
+.autobridge{
+  background-color:#B0C85B;
+}
+.autosally{
+  background-color:#9AC757;
+}
+.autorockwall{
+  background-color:#8AC653;
+}
+.autorough{
+  background-color:#75C34B;
+}
+.autohighgoal{
+  background-color:#59BF40;
+}
+.autolowgoal{
+  background-color:#54B43C;
+}
+.shotsfired{
+  background-color:#B3CDE0;
+}
+.highscored{
+  background-color:#6497B1;
+}
+.lowscored{
+  background-color:#296A7A;
+}
+.lowbarcrossed{
+  background-color:#005B96;
+}
+.lowhardcrossed{
+  background-color:#03396C;
+}
+.portcullcross{
+  background-color:#0079B4;
+}
+.porthardcross{
+  background-color:#336397;
+}
+.cdfcrossed{
+  background-color:#00447F;
+}
+.cdfhardcross{
+  background-color:#013660;
+}
+.moatcross{
+  background-color:#002C4F;
+}
+.moathardcross{
+  background-color:#221C69;
+}
+.rampcross{
+  background-color:#431C76;
+}
+.ramphardcross{
+  background-color:#663B94;
+}
+.drawcross{
+  background-color:#844DA3;
+}
+.drawhardcross{
+  background-color:#AD3098;
+}
+.sallycross{
+  background-color:#C56AB6;
+}
+.sallyhardcross{
+  background-color:#E57CC2;
+}
+.rockwallcross{
+  background-color:#F2AEE4;
+}
+.rockhardcross{
+  background-color:#FFC2CD;
+}
+.roughcross{
+  background-color:#FF93AC;
+}
+.roughhardcross{
+  background-color:#FF6289;
+}
+.robotchallenge{
+  background-color:#FC3468;
+}
+.robotclimb{
+  background-color:#FF084A;
+}
+.climbspeed{
+  background-color:#f22525;
+}
+.climbsuccess{
+  background-color:#D92323;
+}
+.blue{
+  background-color:#00447F;
+}
+.green{
+  background-color:#59BF40;
+}
+.poofs{
+  background-color:#0079B4;
+}
+.yellow{
+  background-color:#FFFF00;
+}
+td p{
+  color:white;
+}
+#bar{
+  background-color: white;
+  height:25px;
+  width:400px;
+}
+div div{
+  display:inline-block;
+  background-color:blue;
+  height:21px;
+  width:100px;
+  margin-top:3px;
+  border-radius:5px;
+  margin-left:5px;
+  text-align:center;
+}
+a{
+  text-decoration:none;
+  color:white;
+}
+a:hover{
+  color:yellow;
+}
+.dif{
+  color:black;
+}
