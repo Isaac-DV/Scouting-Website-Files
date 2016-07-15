@@ -5,8 +5,8 @@
 </head>
 <body>
 <form  action="search.php" method="post" id="searchform">
-<input  type="text" name="search" placeholder="Search for teams"/>
-<input  type="submit" name="submit" value="Search"/>
+<input  type="text" name="search" class="search" placeholder="Search for teams"/>
+<input  type="submit" name="submit" class="button" value="Search"/>
 </form>
 <?php 
 error_reporting(E_ALL);

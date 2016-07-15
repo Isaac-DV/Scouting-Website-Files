@@ -16,9 +16,9 @@
 		<a href="http://www.gorohi.com/1323/teamaverages.php">Team Averages</a>
 	</div>
 </div>
-<form  action="viewdata.php" method="post" id="searchform">
-<input  type="text" name="search" placeholder="Search for teams"/>
-<input  type="submit" name="submit" value="Search"/>
+<form  action="editdata.php" method="post" id="searchform">
+<input  type="text" name="search" class="search" placeholder="Enter SQL command"/>
+<input  type="submit" name="submit" class="button" value=">>"/>
 </form>
 <?php 
 error_reporting(E_ALL);
@@ -33,12 +33,16 @@ mysql_select_db($database_name);
 
 if(isset($_POST['submit'])){
 	$searchq = $_POST['search'];
-	if($searchq != "delete from ChampsData")
-	$query = mysql_query($searchq);
-	if(mysql_error()){
-		die(mysql_error());
+		$query = mysql_query($searchq);
+		if(mysql_error()){
+			die(mysql_error());
+		echo "Success";
+	
+	
 	}
 	
 }
 
 ?>
+</body>
+</html>
